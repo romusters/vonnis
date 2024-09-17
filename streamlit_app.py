@@ -12,8 +12,8 @@ if 'state_1' not in st.session_state:
 
 
 # Checkbox States
-state_1 = st.sidebar.checkbox("NER Name", value=st.session_state['state_1'])
-state_2 = st.sidebar.checkbox("NER Date", value=st.session_state['state_2'])
+state_1 = st.sidebar.checkbox(f"NER Name: Robert Musters", value=st.session_state['state_1'])
+state_2 = st.sidebar.checkbox(f"NER Date: February 20, 1999", value=st.session_state['state_2'])
 
 # Handle Logic - Only one can be chosen
 if state_1:
